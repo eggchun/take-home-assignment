@@ -1,0 +1,26 @@
+{
+  "name": "indiassignment",
+  "version": "1.0.0",
+  "description": "Take-home Assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Michael Li",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "exif": "^0.6.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security"
+  },
+  "engines": {
+    "node": "12.13.1"
+  }
+}

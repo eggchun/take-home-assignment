@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>Photo Information</title>
+</head>
+<body>
+    <div class="container">
+        <h1><%= img.title %></h1>
+        <h5><%= img.description %></h5>        
+        <table class="table">
+            <tr>
+                <td><img class="img-fluid" style="width: 50%;" src="data:<%= img.mimetype %>;base64, <%= img.base64 %>"></td>
+            </tr>
+            <tr>
+                <td>Make: <%= img.make %></td>
+            </tr>
+            <tr>
+                <td>Model: <%= img.model %></td>
+            </tr>
+            <tr>
+                <td>Created On: <%= img.date %></td>
+            </tr>
+            <tr>
+                <td>Location: <a href="/map?lat=<%=img.gps.lat%>&lon=<%=img.gps.lon%>">Map</a></td>
+            </tr>
+        </table>
+        <a href="/" class="btn btn-primary">Home</a>
+    </div>
+</body>
+</html>

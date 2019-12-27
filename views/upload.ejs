@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>Upload Photo</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Upload a Photo</h1>
+        <hr>
+        <div class="content col-md-8">
+            <form action="/imgUpload" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="">Title</label>
+                    <input name="title" class="form-control" type="text" required="">
+                </div>
+                <div class="form-group">
+                    <label class="">Description</label>
+                    <input name="description" class="form-control" type="text" required="">
+                </div>
+                <div class="form-group">
+                    <label class="">Photo</label>
+                    <input name="photo" class="form-control" type="file">
+                </div>
+                <button class="btn btn-primary"> Create </button>
+            </form>
+        </div>
+</body>
+</html>
