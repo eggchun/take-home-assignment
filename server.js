@@ -60,6 +60,13 @@ app.post('/imgUpload', (req, res) => {
     })
 })
 
+app.get('*', (req, res) => {
+    res.render("error", {
+        errorT: "Status 404.",
+        errorM: "Page is not found."
+    })
+})
+
 function getExif(file, callback){
     new ExifImage(file, (error, exifDate) =>{
         if (error){
